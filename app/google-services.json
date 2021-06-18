@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606076894291",
+    "project_id": "locaution-9e9ff",
+    "storage_bucket": "locaution-9e9ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606076894291:android:2a6b947704c7cc51039aa6",
+        "android_client_info": {
+          "package_name": "com.matt.locaution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606076894291-cdfitel260nj5l046rhnhifcttefpbl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdqVSYAxUr3iB5tshEYNnM8uxP1VbyT7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606076894291-cdfitel260nj5l046rhnhifcttefpbl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

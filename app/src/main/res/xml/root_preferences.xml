@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Map">
+        <ListPreference
+            android:defaultValue="true"
+            android:entries="@array/marker_colors"
+            android:entryValues="@array/marker_colors_value"
+            android:key="marker_color"
+            android:title="Marker Color" />
+        <ListPreference
+            android:defaultValue="true"
+            android:entries="@array/marker_details"
+            android:entryValues="@array/marker_details_value"
+            android:key="marker_detail"
+            android:title="Marker Detail" />
+        <SeekBarPreference
+            android:defaultValue="8"
+            android:key="zoom_scale"
+            android:max="25"
+            android:title="Zoom Scale"
+            app:min="1"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

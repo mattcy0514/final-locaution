@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="#0000"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_location"
+        android:layout_width="160sp"
+        android:layout_height="160sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FBC596"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_ent_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Longitude"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tv_ent_lati"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ent_lati" />
+
+            <TextView
+                android:id="@+id/tv_ent_lati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Latitude"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tv_ent_time"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ent_time" />
+
+            <TextView
+                android:id="@+id/tv_ent_lati_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="24.51..."
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_ent_lati"
+                app:layout_constraintStart_toEndOf="@+id/tv_ent_lati"
+                app:layout_constraintTop_toTopOf="@+id/tv_ent_lati" />
+
+            <TextView
+                android:id="@+id/tv_ent_long_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24.51..."
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_ent_long"
+                app:layout_constraintStart_toStartOf="@+id/tv_ent_lati_val"
+                app:layout_constraintTop_toTopOf="@+id/tv_ent_long" />
+
+            <TextView
+                android:id="@+id/tv_ent_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="2021/06/13  23:59:59"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

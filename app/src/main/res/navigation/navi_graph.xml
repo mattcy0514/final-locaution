@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.matt.locaution.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:popUpTo="@id/listFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_routeFragment"
+            app:destination="@id/routeFragment"
+            app:popUpTo="@id/listFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.matt.locaution.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <argument
+            android:name="locationEntity"
+            app:argType="com.matt.locaution.room.LocationEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/routeFragment"
+        android:name="com.matt.locaution.RouteFragment"
+        android:label="fragment_route"
+        tools:layout="@layout/fragment_route" >
+        <argument
+            android:name="locationRecords"
+            app:argType="com.matt.locaution.room.LocationEntity[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.matt.locaution.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>
